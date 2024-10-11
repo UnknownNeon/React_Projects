@@ -1,1 +1,4 @@
-<h1>This is a folder for Learning react by doing Projects ! </h1>
+<h1>This is a folder for Learning react !  </h1>
+<ol>
+<li>todo</li>
+</ol>

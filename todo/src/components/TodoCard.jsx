@@ -9,8 +9,8 @@ const TodoCard = (props) => {
     <div className='card color_cust'>
       <h2 className='color_cust card-name'>Name : {todo.info} </h2>
       <div className='color_cust btn-card'> 
-        <button>Done </button>
-        <button>Delete </button>
+        <button >Done </button>
+        <button style={{"background-color":"red" , "color" : "white"}}>Delete </button>
       </div>
     </div>
   )

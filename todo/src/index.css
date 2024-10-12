@@ -61,6 +61,10 @@ button {
 .card-name{
     padding: 10px;
 }
-.color_blue {
+.color_cust {
     background: burlywood;
+}
+.btn-card > button {
+    padding: 5px;
+    font-size: medium;
 }

@@ -8,4 +8,5 @@ Motive : To make a website to store todo's as the user needs.
 <p>npm install</p>
 <p>npm run dev</p>
 
-![image](https://github.com/user-attachments/assets/650975ba-8d66-4c86-b25c-cd86065b43d5)
+![image](https://github.com/user-attachments/assets/8cf5a982-fab2-4af1-9ceb-4caf1463465d)
+

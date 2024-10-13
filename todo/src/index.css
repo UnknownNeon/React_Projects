@@ -6,6 +6,7 @@
     text-decoration: none;
     transition: all 0.2s;
     font-family: "Afacad Flux", sans-serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -68,4 +69,26 @@ button {
 .btn-card > button {
     padding: 5px;
     font-size: medium;
+}
+
+.todo-input {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.todo-input > input {
+    width: 20vw;
+    font-size: 1.2rem;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right:10px;
+}
+.todo-input > button {
+    background-color: skyblue;
+    font-size: 1.2rem;
 }

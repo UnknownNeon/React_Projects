@@ -11,7 +11,7 @@ const App = () => {
     { info: "Some text 2" , completed : false},
     { info: "Some text 3" , completed : false},
     { info: "Some text 4" , completed : false},
-    { info: "Some text 4" , completed : true},
+    { info: "Some text 5" , completed : false},
   ]
   
   let all_tabs = ["All" , "Open" , "Completed"];
@@ -22,7 +22,6 @@ const App = () => {
       <Header todos={todo_info} />
       <Tabs todos={todo_info} all_tabs={all_tabs}/>
       <TodoList todos={todo_info} />
-      <TodoInput todos={todo_info} />
     </div>
   )
 }

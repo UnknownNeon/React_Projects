@@ -1,11 +1,10 @@
 import React from 'react'
 import TodoCard from './TodoCard'
-import TodoInput from './TodoInput';
 
 const TodoList = (props) => {
 
-  const { todos} = props;
-  const tab = "All";
+  const { selectTab,todos ,delete_todo ,edit_todo} = props;
+  const tab = selectTab;
 
   const filterdList = tab === "All" ?
   todos :
@@ -15,10 +14,10 @@ const TodoList = (props) => {
 
   return (
     <div>
-      <TodoInput />
+    
         {filterdList.map((todo , todoIndex ) => {
         return (
-          <TodoCard key={todoIndex} todo={todo} />
+          <TodoCard key={todoIndex} todo={todo} todoIndex={todoIndex} delete_todo={delete_todo} edit_todo={edit_todo} />
         )})}
     </div>
   )

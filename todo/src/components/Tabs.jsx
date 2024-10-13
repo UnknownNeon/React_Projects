@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tabs = (props) => {
 
-   const { todos , all_tabs } = props;
+   const { selectTab , setSelectTab , todos , all_tabs } = props;
 
   return (
     <nav className='nav'>
@@ -14,7 +14,7 @@ const Tabs = (props) => {
                 todos.filter((val) => val.completed).length;
                 
                 return (
-                    <button key={tabIndex}>
+                    <button key={tabIndex} onClick={()=> { setSelectTab(tab)}}>
                         <h4>{tab}<span className='badge'>{number_of_tabs != 0 ? number_of_tabs : " "}</span></h4>
                     </button>
                 )

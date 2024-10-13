@@ -2,7 +2,7 @@ import React from 'react'
 
 const TodoCard = (props) => {
 
-  const {todo } = props;
+  const {todo, todoIndex ,delete_todo , edit_todo} = props;
 
   return (
     <div className='card color_cust'>
@@ -10,9 +10,9 @@ const TodoCard = (props) => {
       <div className='color_cust btn-card'> 
         {
           todo.completed == false ?
-            <button >Done </button> : ""
+            <button onClick={()=> {edit_todo(todoIndex)}}>Done </button> : ""
         }
-        <button style={{"background-color":"red" , "color" : "white"}}>Delete </button>
+        <button onClick={()=> {delete_todo(todoIndex)} }style={{"background-color":"red" , "color" : "white"}}>Delete </button>
       </div>
     </div>
   )

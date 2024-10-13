@@ -48,6 +48,7 @@ button {
     position: absolute;
     font-size: 1.2rem;
     color: blue;
+    margin-left: 5px;
 }
 
 .card {

@@ -14,9 +14,7 @@ const App = () => {
   //   { info: "Some text 5" , completed : false},
   // ]
   
-  const [todo_info,setTodosInfo] = useState([
-    { info: "Some text 1" , completed : false},
-  ]);
+  const [todo_info,setTodosInfo] = useState([]);
 
   const [selectTab , setSelectTab ] = useState("All")
 

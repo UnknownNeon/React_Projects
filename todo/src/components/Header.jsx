@@ -6,7 +6,7 @@ const Header = (props) => {
 
   return (
     <header>
-        <h1>You have studied {todos.length} task</h1>
+        <h1>You have made {todos.length} task</h1>
     </header>
   )
 }
